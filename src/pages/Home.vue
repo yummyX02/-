@@ -93,7 +93,7 @@ export default {
         classNum:[],
         firstWill:[],
         secondWill:[],
-      ruleForm:{
+        ruleForm:{
         stdId:'',
         stdName:'',
         stdQQ:'',
@@ -352,13 +352,14 @@ export default {
             }
           }
         ).then(res=>{
-          console.log(res.data);
-          alert(res.data.message);
+          console.log(res.data)
+          alert("报名成功，愿你在心仪的组织里发光发热");
+          
+          
         }).catch(error=>{
           console.log(error);
           alert(error.data.message);
         })
-      
   }
 }
 }

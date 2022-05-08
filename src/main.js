@@ -5,7 +5,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router';
 
 // 按需引入ElementUI
-import {Input,Select,Option,Switch,Button, Cascader,Container, Main, Form, FormItem,Image, Header, Aside, Menu, Submenu, MenuItemGroup, MenuItem, BreadcrumbItem,Breadcrumb, Table, Pagination, TableColumn} from 'element-ui';
+import {Input,Select,Option,Switch,Button, Cascader,Container, Main, Form, FormItem,Image, Header, Aside, Menu, Submenu, MenuItemGroup, MenuItem, BreadcrumbItem,Breadcrumb, Table, Pagination, TableColumn, RadioGroup, RadioButton, Dialog} from 'element-ui';
 
 // 引入路由器
 import router from './router';
@@ -38,6 +38,12 @@ Vue.component(Breadcrumb.name,Breadcrumb);
 Vue.component(Table.name,Table);
 Vue.component(Pagination.name,Pagination);
 Vue.component(TableColumn.name,TableColumn);
+Vue.component(RadioGroup.name,RadioGroup);
+Vue.component(RadioButton.name,RadioButton);
+Vue.component(Dialog.name,Dialog);
+Vue.component(Form.name,Form);
+
+
 // 使用路由
 Vue.use(VueRouter);
 // 使用axios
